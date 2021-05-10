@@ -6,21 +6,53 @@
         <link type= "stylesheet" href="index.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="index.css" >
         <script defer src="script.js"></script>
     </head>
 
     <body>
-        <header class='header'>
+        <header class="header">
             <h1>CONNECT FOUR</h1>
         </header>
-        <div class='board'></div>
-        <aside>
-            <label class="switch">
-            <input type="checkbox">
-            <span class="slider"></span>
-            <p class="currentPlayer"></p>
+        <div class="board"></div>
+        <div class="info">
+        <h1 class="title">INFORMATION BOARD</h1>
+            <div class="status" id="status">
+
+                <div class= "switchbox">
+                <h3>SWITCH TURN</h3>
+                <label class="switch">
+                <input class='switchplayers' type="checkbox">
+                </div>
+
+                <div class="player-display">
+                <h4 class="turn"></h4>
+                <h1 class="currentPlayers"></h1>
+                <p class="player-one"></p>
+                <h1>VS</h1>
+                <p class="player-two"></p>
+                <input type="button" class="reset" value="RESET">
+                </div>
+            </div>
+        
+            <div class='info-form'>
+            <form id='info-form'>
+                <div class='form-one'>
+                <label for="Player Name">Player RED</label><br>
+                <input type="text" id="player-red" name="red" value="Enter Name Here"><br>
+                <label for="Player Name">Player YELLOW</label><br>
+                <input type="text" id="player-yellow" name="yellow" value="Enter Name Here"><br>
+                <input type="submit" class="submit-info" value="Submit">
+                <h4>VERSUS COMPUTER</h4>
+                <label class="computer-switch">
+                <input class='computerswitch' type="checkbox">
+            </form>
+            </div>
+        </div>
         </label>
+        </div>
         </aside>
 
     </body> 
